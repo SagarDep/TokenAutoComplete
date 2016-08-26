@@ -816,16 +816,16 @@ public abstract class TokenCompleteTextView<T> extends MultiAutoCompleteTextView
         focusChanging = false;
     }
 
-    @Override
-    public void onFocusChanged(boolean hasFocus, int direction, Rect previous) {
-        super.onFocusChanged(hasFocus, direction, previous);
+    // @Override
+    // public void onFocusChanged(boolean hasFocus, int direction, Rect previous) {
+    //     super.onFocusChanged(hasFocus, direction, previous);
 
-        // See if the user left any unfinished tokens and finish them
-        if (!hasFocus) performCompletion();
+    //     // See if the user left any unfinished tokens and finish them
+    //     if (!hasFocus) performCompletion();
 
-        // Collapse the view to a single line
-        if (allowCollapse) performCollapse(hasFocus);
-    }
+    //     // Collapse the view to a single line
+    //     if (allowCollapse) performCollapse(hasFocus);
+    // }
 
     @SuppressWarnings("unchecked cast")
     @Override
